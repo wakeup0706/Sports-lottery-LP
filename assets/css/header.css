@@ -1,0 +1,170 @@
+:root {
+    --text: #2D6584;
+    --main-color: #41B8F9;
+    --auxiliary-color: #FD7927;
+    --back-color: #ECF0F4 ;
+    --footer-back-color: #D9F1FE ;
+}
+.header { 
+  background-color: #fff;
+  padding-inline: 100px;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header .logo {
+  height: 30px;
+  margin-block: 30px;
+  cursor: pointer;
+}
+
+.nav a {
+  margin-left: 30px;
+  text-decoration: none;
+  color: var(--text);
+  font-size: 16px;
+  font-weight: 500;
+  transition: all .2s;
+}
+
+.nav a:hover {
+  color: var(--auxiliary-color);
+}
+
+/* menu-button */
+.menubutton{
+    display: none;
+    position: relative;
+}
+#toggle {
+  display: block;
+  width: 28px;
+  height: 30px;
+  margin: 38px auto 10px;
+}
+
+#toggle span:after,
+#toggle span:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -9px;
+}
+#toggle span:after{
+  top: 9px;
+}
+#toggle span {
+  position: relative;
+  display: block;
+}
+
+#toggle span,
+#toggle span:after,
+#toggle span:before {
+  width: 100%;
+  height: 5px;
+  background-color: var(--main-color);
+  transition: all 0.3s;
+  backface-visibility: hidden;
+  border-radius: 2px;
+}
+
+/* on activation */
+#toggle.on span {
+  background-color: transparent;
+}
+#toggle.on span:before {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+#toggle.on span:after {
+  transform: rotate(-45deg) translate(7px, -8px);
+}
+#toggle.on + #menu {
+  opacity: 1;
+  display: block;
+}
+
+/* menu appearance*/
+#menu {
+  position: absolute;
+  color: #999;
+  width: 200px;
+  padding: 10px;
+  margin: auto;
+  font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+  text-align: center;
+  border-radius: 4px;
+  background: white;
+  box-shadow: 0 1px 8px rgba(0,0,0,0.05);
+  /* just for this demo */
+  opacity: 0;
+  display: none;
+  transition: opacity .4s;
+  right: 0;
+}
+#menu:after {
+  position: absolute;
+  top: -15px;
+  left: 95px;
+  content: "";
+  display: block;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 20px solid white;
+}
+ul, li, li a {
+  list-style: none;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+li a {
+  padding: 5px;
+  color: #888;
+  text-decoration: none;
+  transition: all .2s;
+}
+li a:hover,
+li a:focus {
+  background: var(--auxiliary-color);
+  color: #fff;
+}
+
+@media screen and (max-width: 1200px){
+    .header { 
+        padding-inline: 50px;
+    }
+    .nav a {
+        margin-left: 20px;
+        text-decoration: none;
+        color: var(--text);
+        font-size: 16px;
+        font-weight: 500;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .nav a{
+        display: none;
+    }
+    .menubutton{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 460px){
+    .header{
+        padding-inline: 20px;
+    }
+    .header .logo {
+        height: 25px;
+    }
+}

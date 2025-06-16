@@ -1,0 +1,32 @@
+:root {
+    --text: #2D6584;
+    --main-color: #41B8F9;
+    --auxiliary-color: #FD7927;
+    --back-color: #ECF0F4 ;
+    --footer-back-color: #D9F1FE ;
+}
+
+.footer{
+  background-color: var(--footer-back-color);
+  padding: 20px;
+}
+
+.footer .logo{
+  display: flex;
+  align-items: center;
+  margin-inline: auto;
+  height: 30px;
+}
+.footer p{
+  margin-top: 15px;
+  color: var(--auxiliary-color);
+}
+
+@media screen and (max-width: 460px){
+  .footer{
+    padding: 15px;
+  }
+  .footer .logo {
+      height: 25px;
+  }
+}

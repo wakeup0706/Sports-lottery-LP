@@ -1,0 +1,11 @@
+:root {
+    --text: #2D6584;
+    --main-color: #41B8F9;
+    --next-button: #FD7927;
+    --back-color: #ECF0F4 ;
+    --footer-back-color: #D9F1FE ;
+}
+
+.concerns{
+    padding: 30px;
+}
