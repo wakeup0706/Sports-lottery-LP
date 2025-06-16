@@ -100,7 +100,8 @@
     margin-block: 20px 50px;
 }
 .solve_card{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(244px, 1fr));
     gap: 20px;
 }
 .solve_card .card {
@@ -132,7 +133,65 @@
     }
 
     .solve_card{
-        flex-direction: column;
         align-items: center;
+        justify-items: center;
+    }
+}
+
+/* processStep */
+.processStep {
+    text-align: center;
+    padding: 0 20px 60px 20px;
+}
+.processStep_container {
+    max-width: 1408px;
+    margin-inline: auto;
+}
+.processStep .section-title {
+  font-size: 32px;
+  margin-block: 20px 10px;
+  position: relative;
+  color: var(--text);
+}
+.steps{
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(244px, 1fr));
+    gap: 30px;
+}
+.steps .step_card{
+    position: relative;
+    border-radius: 10px;
+    padding: 16px 32px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+.steps .step_card .mark{
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 12px;
+    background: linear-gradient(90deg,rgba(255, 200, 166, 1) 0%, rgba(253, 121, 39, 1) 100%);
+    color: #fff;
+    border-radius: 16px;
+    padding: 3px 20px;
+}
+.steps .step_card .card_title {
+    color: var(--text);
+    font-weight: 600;
+    font-size: 16px;
+    margin-block: 15px;
+}
+.steps .step_card .card_content {
+    font-size: 14px;
+    color: #323232;
+    text-align: start;
+}
+@media (max-width: 768px) {
+    .processStep .section-title {
+        font-size: 28px;
+    }
+    .steps{
+        gap: 50px;
     }
 }
