@@ -1,7 +1,7 @@
 :root {
     --text: #2D6584;
     --main-color: #41B8F9;
-    --next-button: #FD7927;
+    --auxiliary-color: #FD7927;
     --back-color: #ECF0F4 ;
     --footer-back-color: #D9F1FE ;
 }
@@ -15,8 +15,6 @@
 body {
   font-family: "Helvetica Neue", Arial, sans-serif;
   line-height: 1.6;
-  color: var(--back-color);
-  background-color: #f9f9f9;
 }
 
 p, p a {
@@ -28,4 +26,49 @@ p, p a {
 .container {
   max-width: 1045px;
   margin: 0 auto;
+}
+
+/* button- group */
+.button-group {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding-block: 12px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  max-width: 300px;
+  width: 100%;
+}
+
+.btn.download {
+  background: linear-gradient(180deg,rgba(65, 184, 249, 1) 0%, rgba(65, 184, 249, 1) 93%, rgba(38, 109, 147, 1) 100%);
+}
+
+.btn.contact {
+    background: linear-gradient(180deg,rgba(253, 121, 39, 1) 0%, rgba(253, 121, 39, 1) 93%, rgba(151, 72, 23, 1) 100%);
+}
+
+.btn img{
+    position: absolute;
+    right: 20px;
+    height: 20px;
+}
+
+@media (max-width: 768px) {
+  .button-group {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
 }
