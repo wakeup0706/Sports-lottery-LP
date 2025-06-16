@@ -72,7 +72,7 @@
     .concerns .content {
         flex-direction: column;
     }
-    .section-title {
+    .concerns .section-title {
         font-size: 28px;
     }
 }
@@ -80,7 +80,7 @@
 /* solve */
 .solve{
     background-color: var(--back-color);
-    padding: 0 20px 20px 20px;
+    padding: 0 20px 60px 20px;
     text-align: center;
 }
 .border_white{
@@ -96,11 +96,43 @@
 .solve .title-content {
     font-size: 14px;
     font-weight: 600;
-    color: black;
+    color: #323232;
+    margin-block: 20px 50px;
+}
+.solve_card{
+    display: flex;
+    gap: 20px;
+}
+.solve_card .card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    padding-bottom: 30px;
+    max-width: 350px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+.solve_card .card .card_title {
+    color: var(--text);
+    font-weight: 600;
+    font-size: 16px;
+    margin-block: 15px;
+}
+.solve_card .card .card_content {
+    font-size: 14px;
+    color: #323232;
 }
 
 @media (max-width: 768px) {
     .border_white img {
         width: 70px;
+    }
+
+    .solve .section-title {
+        font-size: 28px;
+    }
+
+    .solve_card{
+        flex-direction: column;
+        align-items: center;
     }
 }
