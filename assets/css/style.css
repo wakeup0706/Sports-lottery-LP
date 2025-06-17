@@ -24,7 +24,9 @@ p, p a {
     text-align: center;
     color: #888;
 }
-
+a{
+    text-decoration: none;
+}
 .container {
   max-width: 1045px;
   margin: 0 auto;
