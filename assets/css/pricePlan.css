@@ -213,3 +213,59 @@
     display: none;
   }
 }
+
+/* convenient */
+.convenient-section {
+  background: var(--back-color);
+  padding: 0 20px 40px 20px;
+  text-align: center;
+  font-family: "Hiragino Kaku Gothic ProN", sans-serif;
+}
+.border_white{
+  margin-bottom: 40px;
+}
+.convenient-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+.convenient-box {
+  background: white;
+  padding: 25px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  text-align: left;
+}
+.convenient-box .box-title{
+  display: flex;
+  gap: 20px;
+}
+.convenient-box img {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 10px;
+}
+.convenient-box h6 {
+  color: var(--auxiliary-color);
+}
+.convenient-box h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: var(--text);
+}
+.convenient-four{
+  margin-top: 70px;
+}
+.convenient-grid-container{
+  max-width: 900px;
+  margin-inline: auto;
+  margin-block:20px 70px;
+}
+.convenient-box p {
+  font-size: 13px;
+  color: var(--text);
+  line-height: 1.6;
+  font-weight: 500;
+  text-align: start;
+  margin-top: 10px;
+}
