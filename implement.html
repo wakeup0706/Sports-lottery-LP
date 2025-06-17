@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QRコードで簡単！ WEB 抽選システム - 手軽に素早く抽選・懸賞キャンペーンを導入 | くじクラウド</title>
+    <link rel="stylesheet" href="./assets/css/header.css" />
+    <link rel="stylesheet" href="./assets/css/footer.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/implement.css" />
+    <script src="./assets/jp/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-container">
+            <img src="./assets/image/logo.png" alt="くじクラウド" class="logo" />
+            <nav class="nav">
+                <a href="#">料金プラン</a>
+                <a href="#">機能一覧</a>
+                <a href="#">導入事例</a>
+                <a href="#">Q&A</a>
+                <a href="#">資料ダウンロード</a>
+                <a href="#">お問い合わせ</a>
+                <a href="#">運営会社</a>
+            </nav>
+            <div class="menubutton">
+                <a href="#menu" id="toggle"><span></span></a>
+                <div id="menu">
+                    <ul>
+                        <li><a href="#">料金プラン</a></li>
+                        <li><a href="#">機能一覧</a></li>
+                        <li><a href="#">導入事例</a></li>
+                        <li><a href="#">Q&A</a></li>
+                        <li><a href="#">資料ダウンロード</a></li>
+                        <li><a href="#">お問い合わせ</a></li>
+                        <li><a href="#">運営会社</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="system">
+        <div class="container">
+            <h2 class="section-title">導入企業</h2>
+
+            <ul class="flex list-none introduce__list flex-center ma-auto">
+                <li class="box-accordion fadeUpTrigger hide fadeUp">
+                    <img decoding="async" src="./assets/image/introduce-yokosuka.png" alt="横須賀市">
+                    <div class="inner" style="display: none;">
+                        <p>人気ゲーム「シェンムー」と横須賀市のコラボイベント。<br>リアルでは聖地巡りをしながらのデジタルスタンプラリー、オンラインでは世界中から参加できる抽選会が開催されました。</p>
+                        <a href="https://www.cocoyoko.net/event/shenmue2.html" target="_blank"
+                            class="txt-link txt-or block txt-cr" rel="noopener">キャンペーン詳細を見る</a>
+                    </div>
+                </li>
+                <li class="box-accordion fadeUpTrigger hide fadeUp">
+                    <img decoding="async" src="./assets/image/introduce-bunkahousou.png" alt="文化放送">
+                    <div class="inner" style="display: none;">
+                        <p>文化放送×浜松町のコラボイベント「はままつり」のオンライン抽選キャンペーン。<br>ラジオ番組ならではの賞品を用意してイベントの盛り上げにお力添えさせていただきました。</p>
+                        <a href="http://localhost/column/146/" target="_blank" class="txt-link txt-or block txt-cr"
+                            rel="noopener">キャンペーン詳細を見る</a>
+                    </div>
+                </li>
+                <li class="box-accordion fadeUpTrigger hide fadeUp">
+                    <img decoding="async" src="./assets/image/introduce-gyogyo.png" alt="釣りメディアGyoGyo">
+                    <div class="inner" style="display: none;">
+                        <p>釣具が当たる抽選キャンペーンを継続開催中。SNSとの相性が非常に良く、読者さまとの関係性を強化しつつ、自社ブランドの認知度を高めます。</p>
+                        <a href="http://localhost/column/172/" target="_blank" class="txt-link txt-or block txt-cr"
+                            rel="noopener">キャンペーン詳細を見る</a>
+                    </div>
+                </li>
+                <li class="box-accordion fadeUpTrigger hide fadeUp">
+                    <picture>
+                        <source srcset="./assets/image/logo-1.png" media="(min-width: 1201px)" width="256.5"
+                            height="88.63">
+                        <source srcset="./assets/image/logo-1-sp.png" media="(max-width: 1200px)" width="138"
+                            height="54">
+                        <img decoding="async" src="./assets/image/logo-1.png" class="dummy-logo" alt="某大手化粧品メーカーさま">
+                    </picture>
+                    <div class="inner" style="display: none;">
+                        <p>特設ブースでの新商品PRイベントでお使いいただきました。<br>抽選演出を大型モニターに表示させることで抽選会をアピール。<br>多くの参加者でにぎわい、新商品の認知拡大に貢献しました。
+                        </p>
+                        <a href="http://localhost/column/185/" target="_blank" class="txt-link txt-or block txt-cr"
+                            rel="noopener">キャンペーン詳細を見る</a>
+                    </div>
+                </li>
+                <li class="box-accordion fadeUpTrigger hide fadeUp">
+                    <picture>
+                        <source srcset="./assets/image/logo-2.png" media="(min-width: 1201px)" width="256.5" height="88.63">
+                        <source srcset="./assets/image/logo-2-sp.png"
+                            media="(max-width: 1200px)" width="138" height="54">
+                        <img decoding="async" src="./assets/image/logo-2.png"
+                            class="dummy-logo" alt="某大手ケータイショップさま">
+                    </picture>
+                    <div class="inner" style="display: none;">
+                        <p>機種変更や料金プランの相談をしに来たお客さまに参加してもらう抽選キャンペーンを開催。<br>自店舗のタブレットで抽選を行い、賞品はその場でお渡ししました。</p>
+                        <a href="http://localhost/column/223/" target="_blank" class="txt-link txt-or block txt-cr"
+                            rel="noopener">キャンペーン詳細を見る</a>
+                    </div>
+                </li>
+                <li class="box-accordion fadeUpTrigger hide fadeUp">
+                    <picture>
+                        <source srcset="./assets/image/logo-3.png"
+                            media="(min-width: 1201px)" width="256.5" height="88.63">
+                        <source srcset="./assets/image/logo-3-sp.png"
+                            media="(max-width: 1200px)" width="138" height="54">
+                        <img decoding="async" src="./assets/image/logo-3.png"
+                            class="dummy-logo" alt="某大手自動車販売店さま">
+                    </picture>
+                    <div class="inner" style="display: none;">
+                        <p>試乗をしてくださったお客さまへのサービスの一環として抽選キャンペーンを実施。<br>成約率アップを後押しします。<br>抽選による小さなワクワクの提供は、ファミリー層からも好評です。
+                        </p>
+                        <a href="http://localhost/column/299/" target="_blank" class="txt-link txt-or block txt-cr"
+                            rel="noopener">キャンペーン詳細を見る</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="button-group container margins">
+            <a href="#" class="btn download">資料ダウンロード<img src="./assets/image/downloadICO.svg" alt=""></a>
+            <a href="#" class="btn contact">お問い合わせ<img src="./assets/image/contectICO.svg" alt=""></a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <img src="./assets/image/logo.png" alt="くじクラウド" class="logo" />
+        <p>©2025 Kuji Cloud</p>
+    </footer>
+</body>
+<script src="./assets/jp/menu.js"></script>
+<script src="./assets/jp/index.js"></script>
+
+</html>
