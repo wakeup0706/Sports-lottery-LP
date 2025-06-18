@@ -1,0 +1,135 @@
+.transaction{
+  padding: 40px 20px 30px 20px;
+  text-align: center;
+  font-family: "Hiragino Kaku Gothic ProN", sans-serif;
+}
+.transaction .section-title {
+  font-size: 32px;
+  margin-block: 20px 30px;
+  position: relative;
+  color: var(--text);
+}
+.transaction .section-title::before{
+  content: 'Company';
+  font-size: 14px;
+  font-weight: 300;
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.section-title::after{
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: 7%;
+  margin-inline: auto;
+  background-color: var(--text);
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* transaction */
+.row > div:first-child {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-block: 10px;
+}
+.transaction-img .m-width{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow images to wrap on small screens */
+}
+.transaction-img img {
+    width: 300px;
+    height: 200px;
+    border-radius: 20px;
+    object-fit: cover;
+    max-width: 100%; /* Prevent overflow */
+}
+.s-width {
+    max-width: 600px;
+    overflow: hidden;
+    margin-inline: auto;
+    padding-inline: 20px;
+}
+#transaction .row {
+    display: flex;
+    gap: 10px;
+    padding-bottom: 0px ;
+}
+
+#transaction .row .value{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #ddd;
+    padding: 20px 10px;
+}
+#transaction .label {
+    width: 30%;
+    font-weight: bold;
+    color: #e74c3c;
+    justify-content: center;
+    border-bottom: 1px solid #e74c3c;
+    align-items: center;
+}
+#transaction .value {
+    width: 70%;
+    margin-block: auto;
+}
+#transaction .text-section {
+    text-align: center;
+    padding-top: 50px;
+}
+#transaction .container {
+    margin-block: 20px;
+}
+.value {
+    line-height: 30px;
+}
+.value p{
+    font-size: 14px;
+    color: #323232;
+}
+/* Responsive adjustments */
+@media (max-width: 900px) {
+    .transaction-img .m-width {
+        gap: 20px;
+    }
+    .transaction-img img {
+        width: 200px;
+        height: 130px;
+    }
+    
+}
+
+@media (max-width: 600px) {
+    .transaction-img .m-width {
+        gap: 10px;
+    }
+    .transaction-img img {
+        width: 100%;
+        height: auto;
+        max-width: 320px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 580px) {   
+    .m-width {
+        padding-inline: 10px;
+    } 
+
+    .label {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .value {
+        font-size: 12px;
+        line-height: 20px;
+    }
+}

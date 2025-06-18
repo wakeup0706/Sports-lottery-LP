@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QRコードで簡単！ WEB 抽選システム - 手軽に素早く抽選・懸賞キャンペーンを導入 | くじクラウド</title>
+    <link rel="stylesheet" href="./assets/css/header.css" />
+    <link rel="stylesheet" href="./assets/css/footer.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/download.css" />
+    <script src="./assets/jp/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-container">
+            <img src="./assets/image/logo.png" alt="くじクラウド" class="logo" />
+            <nav class="nav">
+                <a href="#">料金プラン</a>
+                <a href="#">機能一覧</a>
+                <a href="#">導入事例</a>
+                <a href="#">Q&A</a>
+                <a href="#">資料ダウンロード</a>
+                <a href="#">お問い合わせ</a>
+                <a href="#">運営会社</a>
+            </nav>
+            <div class="menubutton">
+                <a href="#menu" id="toggle"><span></span></a>
+                <div id="menu">
+                    <ul>
+                        <li><a href="#">料金プラン</a></li>
+                        <li><a href="#">機能一覧</a></li>
+                        <li><a href="#">導入事例</a></li>
+                        <li><a href="#">Q&A</a></li>
+                        <li><a href="#">資料ダウンロード</a></li>
+                        <li><a href="#">お問い合わせ</a></li>
+                        <li><a href="#">運営会社</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="contact">
+        <div class="container">
+            <h2 class="section-title">資料ダウンロード</h2>
+            <div class="dl container" id="dl">
+                <div class="dl-inner">
+                    <div class="dl-plan">
+                        <h2><span>無料</span>資料ダウンロード</h2>
+                        <img src="./assets/image/download.png" alt="資料ダウンロード">
+                    </div>
+                    <div class="right-section">
+                        <form>
+                            <label>ご担当者名 <span class="required">必須</span></label>
+                            <input type="text" placeholder="例）くじ 太郎" required>
+
+                            <label>法人名 <span class="required">必須</span></label>
+                            <input type="text" placeholder="例）株式会社くじクラウド" required>
+
+                            <label>企業URL <span class="required">必須</span></label>
+                            <input type="url" placeholder="例）http://kuji-cloud.mon/lp" required>
+
+                            <label>メールアドレス <span class="required">必須</span></label>
+                            <input type="email" placeholder="例）taro-yamada@kuji-cloud.com" required>
+
+                            <label>電話番号 <span class="required">必須</span></label>
+                            <input type="tel" placeholder="09012345678" maxlength="20" required>
+
+                            <label>都道府県 <span class="optional">任意</span></label>
+                            <select>
+                                <option selected disabled>選択してください</option>
+                                <!-- Prefectures list here -->
+                            </select>
+
+                            <label>検討状況 <span class="optional">任意</span></label>
+                            <select>
+                                <option selected disabled>選択してください</option>
+                                <!-- Options here -->
+                            </select>
+
+                            <label>その他ご質問など</label>
+                            <textarea placeholder="例）カスタマイズについて、予算について"></textarea>
+
+                            <button type="submit">送信</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <img src="./assets/image/logo.png" alt="くじクラウド" class="logo" />
+        <p>©2025 Kuji Cloud</p>
+    </footer>
+</body>
+<script src="./assets/jp/menu.js"></script>
+<script src="./assets/jp/index.js"></script>
+
+</html>
