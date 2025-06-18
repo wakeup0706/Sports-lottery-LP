@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QRコードで簡単！ WEB 抽選システム - 手軽に素早く抽選・懸賞キャンペーンを導入 | くじクラウド</title>
+    <link rel="stylesheet" href="./assets/css/header.css" />
+    <link rel="stylesheet" href="./assets/css/footer.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/contact.css" />
+    <script src="./assets/jp/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-container">
+            <img src="./assets/image/logo.png" alt="くじクラウド" class="logo" />
+            <nav class="nav">
+                <a href="#">料金プラン</a>
+                <a href="#">機能一覧</a>
+                <a href="#">導入事例</a>
+                <a href="#">Q&A</a>
+                <a href="#">資料ダウンロード</a>
+                <a href="#">お問い合わせ</a>
+                <a href="#">運営会社</a>
+            </nav>
+            <div class="menubutton">
+                <a href="#menu" id="toggle"><span></span></a>
+                <div id="menu">
+                    <ul>
+                        <li><a href="#">料金プラン</a></li>
+                        <li><a href="#">機能一覧</a></li>
+                        <li><a href="#">導入事例</a></li>
+                        <li><a href="#">Q&A</a></li>
+                        <li><a href="#">資料ダウンロード</a></li>
+                        <li><a href="#">お問い合わせ</a></li>
+                        <li><a href="#">運営会社</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="contact">
+        <div class="container">
+            <h2 class="section-title">お申し込み・ご相談</h2>
+            <div class="input_area">
+                <dl>
+                    <dt><span>必須</span>ご担当者名</dt>
+                    <dd>
+                        <input type="text" name="your-name" placeholder="例）くじ　太郎" required>
+                        <p>※全角で入力して下さい。</p>
+                    </dd>
+
+                    <dt><span>必須</span>法人名</dt>
+                    <dd>
+                        <input type="text" name="your-company" placeholder="例）株式会社くじクラウド" required>
+                        <p>※個人事業主の方は、直接ご契約を行うことができませんのでご了承ください。</p>
+                    </dd>
+
+                    <dt><span>必須</span>企業URL</dt>
+                    <dd>
+                        <input type="text" name="your-url" placeholder="例）http://localhost" required>
+                        <p>※企業WEBサイトの無い場合、その他、社内取引審査の結果によっては<br class="sp-none">お取引をお断りする場合があります。</p>
+                    </dd>
+
+                    <dt><span>必須</span>メールアドレス</dt>
+                    <dd>
+                        <input type="text" name="your-email" class="middle" placeholder="例）taro-yamada@localhost"
+                            required>
+                    </dd>
+
+                    <dt><span>必須</span>電話番号</dt>
+                    <dd>
+                        <input type="text" name="your-tel" class="middle" placeholder="例）03-1111-2222"
+                            pattern="\d{2,4}-\d{2,4}-\d{3,4}" required>
+                        <p>※ハイフンあり半角数字で入力してください。</p>
+                    </dd>
+
+                    <dt><span class="grey">任意</span>都道府県</dt>
+                    <dd>
+                        <div class="select select01 middle">
+                            <select name="your-area">
+                                <option value="">選択してください</option>
+                                <option>北海道</option>
+                                <option>青森県</option>
+                                <option>岩手県</option>
+                                <option>宮城県</option>
+                                <option>秋田県</option>
+                                <option>山形県</option>
+                                <option>福島県</option>
+                                <option>茨城県</option>
+                                <option>栃木県</option>
+                                <option>群馬県</option>
+                                <option>埼玉県</option>
+                                <option>千葉県</option>
+                                <option>東京都</option>
+                                <option>神奈川県</option>
+                                <option>新潟県</option>
+                                <option>富山県</option>
+                                <option>石川県</option>
+                                <option>福井県</option>
+                                <option>山梨県</option>
+                                <option>長野県</option>
+                                <option>岐阜県</option>
+                                <option>静岡県</option>
+                                <option>愛知県</option>
+                                <option>三重県</option>
+                                <option>滋賀県</option>
+                                <option>京都府</option>
+                                <option>大阪府</option>
+                                <option>兵庫県</option>
+                                <option>奈良県</option>
+                                <option>和歌山県</option>
+                                <option>鳥取県</option>
+                                <option>島根県</option>
+                                <option>岡山県</option>
+                                <option>広島県</option>
+                                <option>山口県</option>
+                                <option>徳島県</option>
+                                <option>香川県</option>
+                                <option>愛媛県</option>
+                                <option>高知県</option>
+                                <option>福岡県</option>
+                                <option>佐賀県</option>
+                                <option>長崎県</option>
+                                <option>熊本県</option>
+                                <option>大分県</option>
+                                <option>宮崎県</option>
+                                <option>鹿児島県</option>
+                                <option>沖縄県</option>
+                            </select>
+                        </div>
+                    </dd>
+
+                    <dt><span class="grey">任意</span>検討状況</dt>
+                    <dd>
+                        <div class="select select01">
+                            <select name="your-status">
+                                <option value="">選択してください</option>
+                                <option>予算・企画が決定しており、サービスを選定している</option>
+                                <option>予算は決定しているが、企画内容は不明確</option>
+                                <option>予算化は出来てないが、企画内容は決まっている</option>
+                                <option>予算化は出来ておらず、企画内容も不明確の段階で関連性が欲しい</option>
+                            </select>
+                        </div>
+                    </dd>
+
+                    <dt>その他ご質問など</dt>
+                    <dd>
+                        <textarea cols="40" rows="10" maxlength="2000" id="content" aria-invalid="false"
+                            placeholder="例) カスタマイズについて、予算について" name="your-message"></textarea>
+                        <br>
+                        <p>※個人情報の取り扱いにつきましては、<a href="https://vermuda.jp/policy/" target="_blank"
+                                style="text-decoration: underline;">プライバシーポリシー</a>をご参照ください。<br>
+                            <span style="font-size:10px; line-height: 1.2; display: block; margin-top: 5px;">This site
+                                is protected by reCAPTCHA and the Google<br><a
+                                    href="https://policies.google.com/privacy"
+                                    style="text-decoration: underline;">Privacy Policy</a> and <a
+                                    href="https://policies.google.com/terms" style="text-decoration: underline;">Terms
+                                    of Service</a> apply.</span>
+                        </p>
+                    </dd>
+                </dl>
+                <input type="submit" value="この内容で送信する">
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <img src="./assets/image/logo.png" alt="くじクラウド" class="logo" />
+        <p>©2025 Kuji Cloud</p>
+    </footer>
+</body>
+<script src="./assets/jp/menu.js"></script>
+<script src="./assets/jp/index.js"></script>
+
+</html>

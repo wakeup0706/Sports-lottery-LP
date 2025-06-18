@@ -1,0 +1,221 @@
+:root {
+    --text: #2D6584;
+    --main-color: #41B8F9;
+    --auxiliary-color: #FD7927;
+    --back-color: #ECF0F4 ;
+    --footer-back-color: #D9F1FE ;
+}
+
+/* convenient */
+.contact{
+  padding: 40px 20px 30px 20px;
+  text-align: center;
+  font-family: "Hiragino Kaku Gothic ProN", sans-serif;
+}
+.contact .section-title {
+  font-size: 32px;
+  margin-block: 20px 30px;
+  position: relative;
+  color: var(--text);
+}
+.contact .section-title::before{
+  content: 'contact';
+  font-size: 14px;
+  font-weight: 300;
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.section-title::after{
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: 7%;
+  margin-inline: auto;
+  background-color: var(--text);
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/* ---------- */
+
+.contact dl dt, .contact dl dd {
+    font-size: 22px !important;
+    text-align: left;
+    vertical-align: top;
+    padding: 35px 0 !important;
+    margin-bottom: 0 !important;
+}
+.contact dl dt span {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100px !important;
+  line-height: 38px;
+  background-color: #E81F1F !important;
+  font-size: 18px !important;
+  font-weight: 600;
+  border-radius: 11px !important;
+  margin-right: 30px;
+  color: #FFF !important;
+  text-align: center;
+}
+.contact dl dt, .contact dl dd {
+    font-size: 22px !important;
+    text-align: left;
+    vertical-align: top;
+    padding: 35px 0 !important;
+    margin-bottom: 0 !important;
+}
+.contact dl dd input[type=text], .contact dl dd textarea {
+    width: 100% !important;
+    font-size: 20px !important;
+    background-color: #ECF0F4 !important;
+    border-radius: 12px !important;
+    border: 1px solid #BABABA !important;
+    padding: 11px !important;
+    padding-left: 28.5px !important;
+}
+@media (min-width: 1201px) {
+  .contact dl dd p {
+    font-size: 16px !important;
+    text-align: start;
+  }
+  .contact dl dt {
+    width: 350px !important;
+  }
+  .contact dl dd {
+    width: 750px !important;
+  }
+  .contact dl {
+    width: 1100px;
+    margin-inline: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.contact dl dd .select select {
+  position: relative;
+  font-weight: 600;
+  width: 100%;
+  font-size: 20px !important;
+  background-color: #ECF0F4 !important;
+  border-radius: 12px !important;
+  border: 1px solid #BABABA !important;
+  padding: 11px;
+  padding-left: 28.5px;
+  color: #585858;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.contact dl dd .select.select01::before {
+  content: "▼";
+  position: absolute;
+  display: block;
+  font-size: 20px;
+  top: 50%;
+  color: #585858;
+  right: 15px;
+  width: 19px;
+  height: 15px;
+  transform: translateY(-100%);
+  z-index: 2;
+}
+.contact dl dd select::before {
+  z-index: 99;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+  width: 0;
+  height: 0;
+  padding: 0;
+  content: "";
+  display: block;
+}
+.select.select01.middle, .contact dl dd .select.middle {
+    width: 350px;
+}
+.select.select01.middle, .contact dl dd .select {
+    position: relative;
+}
+.contact .confirm_button, .contact input[type=submit] {
+  display: block;
+  text-align: center;
+  padding: 0;
+  height: 74px;
+  line-height: 74px;
+  width: 395px;
+  margin-inline: auto;
+  color: #FFF;
+  border-radius: 16px;
+  background-color: #88D3FF;
+  border: 1px solid #88D3FF;
+  font-size: 20px;
+  margin-top: 50px;
+  padding: 0;
+  cursor: pointer;
+  transition: .5s;
+}
+.contact dl dt span.grey {
+  background-color: #959595 !important;
+}
+@media (max-width: 1200px) {
+  .contact dl dd p {
+    font-size: 14px;
+    text-align: start;
+  }
+  main .contact dl {
+    max-width: 750px;
+    margin-inline: auto;
+  }
+  .contact dl dt {
+    padding: 10px 0 5px !important;
+  }
+  .contact dl dt, .contact dl dd {
+    display: block;
+    font-size: 16px !important;
+    padding: 5px 0 !important;
+  }
+  .contact dl dt span {
+    justify-content: center;
+    font-size: 14px !important;
+    width: 48px !important;
+    line-height: 25px;
+    border-radius: 6px !important;
+    margin-right: 0 !important;
+  }
+  .contact dl dd input[type=text], .contact dl dd textarea, .contact dl dd .select select {
+    font-size: 16px !important;
+    padding: 9px !important;
+    border-radius: 10px !important;
+  }
+  .contact dl dd p {
+    font-size: 14px;
+  }
+  .contact dl dd {
+    padding: 0 0 10px !important;
+  }
+  .contact dl dd .select.select01:before {
+    font-size: 12px;
+    height: 10px;
+    right: 6px;
+  }
+  .contact dl dd input[type=text], .contact dl dd textarea, .contact dl dd .select select {
+    font-size: 16px !important;
+    padding: 9px !important;
+    border-radius: 10px !important;
+  }
+  .select.select01.middle, .contact dl dd .select.middle {
+    width: 205px;
+  }
+  .contact .confirm_button, .contact input[type=submit], .contact .confirm_area .back_button, .contact .thanks_area a {
+    width: 90%;
+    height: 59px;
+    line-height: 59px;
+    max-width: 273px;
+    font-size: 18px;
+    border-radius: 9px;
+  }
+}
