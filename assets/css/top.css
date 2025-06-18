@@ -286,6 +286,7 @@
     border: var(--text) 1px solid;
     padding: 14px 30px 4px 30px;
     margin-block: 15px;
+    text-align: center;
 }
 
 @media (max-width: 814px) {
