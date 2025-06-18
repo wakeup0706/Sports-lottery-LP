@@ -4,10 +4,13 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="https://kuji-cloud.com/lp/wp-content/uploads/2021/11/cropped-512塗りつぶし-192x192.png" sizes="192x192">
     <title>QRコードで簡単！ WEB 抽選システム - 手軽に素早く抽選・懸賞キャンペーンを導入 | くじクラウド</title>
+    
     <link rel="stylesheet" href="./assets/css/header.css" />
     <link rel="stylesheet" href="./assets/css/footer.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+
     <link rel="stylesheet" href="./assets/css/download.css" />
     <script src="./assets/jp/jquery-3.3.1.min.js"></script>
 </head>
@@ -54,36 +57,42 @@
                     <div class="right-section">
                         <form>
                             <label>ご担当者名 <span class="required">必須</span></label>
-                            <input type="text" placeholder="例）くじ 太郎" required>
+                            <input type="text" id="d_charge_name" placeholder="例）くじ 太郎" required>
 
                             <label>法人名 <span class="required">必須</span></label>
-                            <input type="text" placeholder="例）株式会社くじクラウド" required>
+                            <input type="text" id="d_corporation_name" placeholder="例）株式会社くじクラウド" required>
 
                             <label>企業URL <span class="required">必須</span></label>
-                            <input type="url" placeholder="例）http://kuji-cloud.mon/lp" required>
+                            <input type="url" id="d_company_url" placeholder="例）http://kuji-cloud.mon/lp" required>
 
                             <label>メールアドレス <span class="required">必須</span></label>
-                            <input type="email" placeholder="例）taro-yamada@kuji-cloud.com" required>
+                            <input type="email" id="d_email_address" placeholder="例）taro-yamada@kuji-cloud.com" required>
 
                             <label>電話番号 <span class="required">必須</span></label>
-                            <input type="tel" placeholder="09012345678" maxlength="20" required>
+                            <input type="tel" id="d_telephon_number" placeholder="09012345678" maxlength="20" required>
 
                             <label>都道府県 <span class="optional">任意</span></label>
-                            <select>
-                                <option selected disabled>選択してください</option>
-                                <!-- Prefectures list here -->
+                            <select id="d_prefecture">
+                                <option selected value="">選択してください</option>
+                                <option value="予算・企画が決まっており、サービスを検討している">予算・企画が決まっており、サービスを検討している</option>
+                                <option value="予算は決まっているが、企画内容は決まっていない">予算は決まっているが、企画内容は決まっていない</option>
+                                <option value="予算化は出来てないが、企画内容は決まっている">予算化は出来てないが、企画内容は決まっている</option>
+                                <option value="予算も企画も決まっていないため、情報収集をしている">予算も企画も決まっていないため、情報収集をしている</option>
                             </select>
 
                             <label>検討状況 <span class="optional">任意</span></label>
-                            <select>
-                                <option selected disabled>選択してください</option>
-                                <!-- Options here -->
+                            <select id="d_consideration">
+                                <option selected value="">選択してください</option>
+                                <option value="検索エンジンから">検索エンジンから</option>
+                                <option value="代理店から">代理店から</option>
+                                <option value="弊社営業から">弊社営業から</option>
+                                <option value="Other">Other</option>
                             </select>
 
                             <label>その他ご質問など</label>
-                            <textarea placeholder="例）カスタマイズについて、予算について"></textarea>
+                            <textarea id="d_other_question" placeholder="例）カスタマイズについて、予算について"></textarea>
 
-                            <button type="submit">送信</button>
+                            <button type="submit" id="download_sub">送信</button>
                         </form>
                     </div>
                 </div>
@@ -98,5 +107,4 @@
 </body>
 <script src="./assets/jp/menu.js"></script>
 <script src="./assets/jp/index.js"></script>
-
 </html>
