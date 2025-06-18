@@ -94,6 +94,9 @@
     font-size: 14px;
     color: #323232;
 }
+.margins{
+  margin-block: 40px;
+}
 /* Responsive adjustments */
 @media (max-width: 900px) {
     .transaction-img .m-width {
