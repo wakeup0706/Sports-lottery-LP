@@ -52,7 +52,7 @@
   font-weight: 700;
 }
 .dl h2 span {
-  background: #D70D59;
+  background: #E81F1F;
   border-radius: 8px;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
@@ -102,9 +102,9 @@ label {
 
 .required {
   color: white;
-  background-color: #D70D59;
+  background-color: #E81F1F;
   font-size: 12px;
-  margin-left: 5px;
+  margin-right: 6px;
   border-radius: 8px;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
@@ -118,7 +118,7 @@ label {
   color: white;
   background-color: gray;
   font-size: 12px;
-  margin-left: 5px;
+  margin-right: 6px;
   border-radius: 8px;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;

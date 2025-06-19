@@ -102,11 +102,6 @@
     .transaction-img .m-width {
         gap: 20px;
     }
-    .transaction-img img {
-        width: 200px;
-        height: 130px;
-    }
-    
 }
 
 @media (max-width: 600px) {
@@ -127,12 +122,11 @@
     } 
 
     .label {
-        font-size: 14px;
+        font-size: 16px;
         text-align: center;
     }
-
     .value {
-        font-size: 12px;
+        font-size: 14px;
         line-height: 20px;
     }
 }

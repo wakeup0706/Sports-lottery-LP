@@ -208,13 +208,13 @@
     margin-top: -30px;
 }
 .mobile-view img{
-    width: 300px;
+    width: 345px;
 }
 .phone-frame {
-    top: 10%;
+    top: 12%;
     left: 50%;
-    width: 85%;
-    height: 80%;
+    width: 89%;
+    height: 75%;
     position: absolute;
     transform: translateX(-50%);
 }
@@ -399,6 +399,17 @@
     }
     .concerns .section-title {
         font-size: 28px;
+    }
+}
+@media (max-width: 400px) {
+    .concerns .section-title {
+        font-size: 24px;
+        margin-block: 50px 30px;
+        position: relative;
+        color: var(--text);
+    }
+    .problem-card {
+        font-size: 14px;
     }
 }
 

@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <link rel="icon" href="https://kuji-cloud.com/lp/wp-content/uploads/2021/11/cropped-512塗りつぶし-192x192.png" sizes="192x192">
-  <title>QRコードで簡単！ WEB 抽選システム - 手軽に素早く抽選・懸賞キャンペーンを導入 | くじクラウド</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="https://kuji-cloud.com/lp/wp-content/uploads/2021/11/cropped-512塗りつぶし-192x192.png"
+        sizes="192x192">
+    <title>QRコードで簡単！ WEB 抽選システム - 手軽に素早く抽選・懸賞キャンペーンを導入 | くじクラウド</title>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 
-  <link rel="stylesheet" href="./assets/css/header.css" />
-  <link rel="stylesheet" href="./assets/css/footer.css" />
-  <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/header.css" />
+    <link rel="stylesheet" href="./assets/css/footer.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
 
-  <link rel="stylesheet" href="./assets/css/pricePlan.css" />
+    <link rel="stylesheet" href="./assets/css/pricePlan.css" />
 </head>
+
 <body>
 
-  <header class="header">
+    <header class="header">
         <div class="header-container">
             <a href="./index.html"><img src="./assets/image/logo.png" alt="くじクラウド" class="logo" /></a>
             <nav class="nav">
@@ -46,68 +49,83 @@
         </div>
     </header>
 
-  <section class="price">
-    <div class="price_container">
+    <section class="price">
+        <div class="price_container">
 
-        <h2 class="section-title">料金</h2>
+            <h2 class="section-title">料金</h2>
 
-        <div class="price-cards">
-            <div class="price-card recommended wow animate__fadeInUp" data-wow-duration="1.5s">
-                <div class="badge"><img src="./assets/image/badge.png" alt="badge"></div>
-                <h3 class="title orange">12ヶ月プラン</h3>
-                <ul>
-                    <li><span>1ヶ月あたり<br>お支払額</span><strong class="highlight"><br><span>約</span> 36,666<span>円</span></strong></li>
-                    <li><span>初期導入費用</span><strong>110,000<span>円</span></strong></li>
-                    <li><span>月額利用料</span><strong>33,000<span>円</span></strong></li>
-                    <li>
-                        <span>お支払い総額 <br ><strong><small>更に66,000円値引き</small></strong></span>
-                        <div class="discount">
-                        <del>500,000円</del><br>
-                        <strong>440,000<span>円</span></strong>
-                        </div>
-                    </li>
-                </ul>
+            <div class="price-cards">
+                <div class="price-card recommended wow animate__fadeInUp" data-wow-duration="1.5s">
+                    <div class="badge"><img src="./assets/image/badge.png" alt="badge"></div>
+                    <h3 class="title orange">12ヶ月プラン</h3>
+                    <ul>
+                        <li><span>1ヶ月あたり<br>お支払額</span><strong class="highlight"><br><span>約</span>
+                                36,666<span>円</span></strong></li>
+                        <li><span>初期導入費用</span><strong>110,000<span>円</span></strong></li>
+                        <li><span>月額利用料</span><strong>33,000<span>円</span></strong></li>
+                        <li>
+                            <span id="small">お支払い総額 <br><strong><small>更に66,000円値引き</small></strong></span>
+                            <div class="discount">
+                                <del>500,000円</del><br>
+                                <strong>440,000<span>円</span></strong>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="price-card wow animate__fadeInUp" data-wow-duration="1.5s">
+                    <h3 class="title blue">3ヶ月プラン</h3>
+                    <ul>
+                        <li><span>1ヶ月あたり<br>お支払額</span><strong class="highlight"><br><span>約</span>
+                                69,666<span>円</span></strong></li>
+                        <li><span>初期導入費用</span><strong>110,000<span>円</span></strong></li>
+                        <li><span>月額利用料</span><strong>33,000<span>円</span></strong></li>
+                        <li><span>お支払い総額</span><strong>209,000<span>円</span></strong></li>
+                    </ul>
+                </div>
+                <div class="price-card recommended wow animate__fadeInUp" data-wow-duration="1.5s">
+                    <div class="badge"><img src="./assets/image/badge.png" alt="badge"></div>
+                    <h3 class="title orange">12ヶ月プラン</h3>
+                    <ul>
+                        <li><span>1ヶ月あたり<br>お支払額</span><strong class="highlight"><br><span>約</span>
+                                36,666<span>円</span></strong></li>
+                        <li><span>初期導入費用</span><strong>110,000<span>円</span></strong></li>
+                        <li><span>月額利用料</span><strong>33,000<span>円</span></strong></li>
+                        <li>
+                            <span id="small">お支払い総額 <br><strong><small>更に66,000円値引き</small></strong></span>
+                            <div class="discount">
+                                <del>500,000円</del><br>
+                                <strong>440,000<span>円</span></strong>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="price-card wow animate__fadeInUp" data-wow-duration="1.5s">
+                    <h3 class="title blue">1ヶ月プラン</h3>
+                    <ul>
+                        <li><span>1ヶ月あたり<br>お支払額</span><strong class="highlight"><br>165,000<span>円</span></strong></li>
+                        <li><span>初期導入費用</span><strong>110,000<span>円</span></strong></li>
+                        <li><span>月額利用料</span><strong>55,000<span>円</span></strong></li>
+                        <li><span>お支払い総額</span><strong>165,000<span>円</span></strong></li>
+                    </ul>
+                </div>
             </div>
-            <div class="price-card wow animate__fadeInUp" data-wow-duration="1.5s">
-                <h3 class="title blue">3ヶ月プラン</h3>
-                <ul>
-                    <li><span>1ヶ月あたり<br >お支払額</span><strong class="highlight"><br><span>約</span> 69,666<span>円</span></strong></li>
-                    <li><span>初期導入費用</span><strong>110,000<span>円</span></strong></li>
-                    <li><span>月額利用料</span><strong>33,000<span>円</span></strong></li>
-                    <li><span>お支払い総額</span><strong>209,000<span>円</span></strong></li>
-                </ul>
-            </div>
-            <div class="price-card recommended wow animate__fadeInUp" data-wow-duration="1.5s">
-                <div class="badge"><img src="./assets/image/badge.png" alt="badge"></div>
-                <h3 class="title orange">12ヶ月プラン</h3>
-                <ul>
-                    <li><span>1ヶ月あたり<br>お支払額</span><strong class="highlight"><br><span>約</span> 36,666<span>円</span></strong></li>
-                    <li><span>初期導入費用</span><strong>110,000<span>円</span></strong></li>
-                    <li><span>月額利用料</span><strong>33,000<span>円</span></strong></li>
-                    <li>
-                        <span>お支払い総額 <br ><strong><small>更に66,000円値引き</small></strong></span>
-                        <div class="discount">
-                        <del>500,000円</del><br>
-                        <strong>440,000<span>円</span></strong>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="price-card wow animate__fadeInUp" data-wow-duration="1.5s">
-                <h3 class="title blue">1ヶ月プラン</h3>
-                <ul>
-                    <li><span>1ヶ月あたり<br >お支払額</span><strong class="highlight"><br>165,000<span>円</span></strong></li>
-                    <li><span>初期導入費用</span><strong>110,000<span>円</span></strong></li>
-                    <li><span>月額利用料</span><strong>55,000<span>円</span></strong></li>
-                    <li><span>お支払い総額</span><strong>165,000<span>円</span></strong></li>
-                </ul>
+
+            <div class="option-box wow animate__fadeInUp" data-wow-duration="1.5s">
+                <div class="option-content">
+                    <div class="option-title">
+                        <span class="icon">💡</span>
+                        <span class="title-text">オプション料金のポイント</span>
+                    </div>
+                    <div class="option-description">
+                        店舗利用でもSNS利用でも複数キャンペーンを行っても料金は変わりません！<br>
+                        <span class="note">※ただし1ヶ月間の抽選回数は10万回までとなります※</span>
+                    </div>
+                </div>
+                <div class="option-illustration">
+                    <img src="./assets/image/gan.png" alt="スマホを持つ人物イラスト">
+                </div>
             </div>
         </div>
-
-        <div class="price-note wow animate__fadeInUp" data-wow-duration="1.5s">
-            <img src="./assets/image/price.png" alt="注釈のキャラ" />
-        </div>
-      </div>
     </section>
 
     <section class="option">
@@ -115,17 +133,21 @@
             <div class="container">
                 <h2 class="section-title">オプションについて</h2>
                 <img src="./assets/image/option_title.svg" alt="option_title" class="option_title">
-                <p class="option_content">くじクラウドはオプション料金もお得。一般的な料金プランでは毎月の月額に上乗せ方式でオプション料金が加算されていくところ、くじクラウドならオプション料金のご請求は初月のみの買い切り式。ご負担を少なく、より多彩なオプションをご活用いただけます。</p>
+                <p class="option_content">
+                    くじクラウドはオプション料金もお得。一般的な料金プランでは毎月の月額に上乗せ方式でオプション料金が加算されていくところ、くじクラウドならオプション料金のご請求は初月のみの買い切り式。ご負担を少なく、より多彩なオプションをご活用いただけます。
+                </p>
             </div>
             <div class="option_images">
-                <img src="./assets/image/option_left.png" alt="option_left" class="wow animate__fadeInUp" data-wow-duration="1.5s">
+                <img src="./assets/image/option_left.png" alt="option_left" class="wow animate__fadeInUp"
+                    data-wow-duration="1.5s">
                 <div class="option_arrow1 wow animate__fadeInUp" data-wow-duration="1.5s">
                     <img src="./assets/image/option_arrow1.png" alt="option_arrow1">
                 </div>
                 <div class="option_arrow2 wow animate__fadeInUp" data-wow-duration="1.5s">
                     <img src="./assets/image/option_arrow2.png" alt="option_arrow2">
                 </div>
-                <img src="./assets/image/option_right.png" alt="option_right" class="wow animate__fadeInUp" data-wow-duration="1.5s">
+                <img src="./assets/image/option_right.png" alt="option_right" class="wow animate__fadeInUp"
+                    data-wow-duration="1.5s">
             </div>
         </div>
     </section>
@@ -217,15 +239,31 @@
             </div>
             <div class="container">
                 <div class="button-group">
-                    <a href="./download.html" class="btn download wow animate__fadeInUp" data-wow-duration="1.5s">資料ダウンロード<img src="./assets/image/downloadICO.svg" alt=""></a>
-                    <a href="./contact.html" class="btn contact wow animate__fadeInUp" data-wow-duration="1.5s">お問い合わせ<img src="./assets/image/contectICO.svg" alt=""></a>
+                    <a href="./download.html" class="btn download wow animate__fadeInUp"
+                        data-wow-duration="1.5s">資料ダウンロード<img src="./assets/image/downloadICO.svg" alt=""></a>
+                    <a href="./contact.html" class="btn contact wow animate__fadeInUp"
+                        data-wow-duration="1.5s">お問い合わせ<img src="./assets/image/contectICO.svg" alt=""></a>
                 </div>
             </div>
         </div>
     </section>
 
     <section class="note">
-        <img src="./assets/image/convenient.png" alt="convenient" class="wow animate__fadeInUp" data-wow-duration="1.5s">
+        <div class="option-box wow animate__fadeInUp" data-wow-duration="1.5s">
+            <div class="option-content">
+                <div class="option-title">
+                    <span class="icon">💡</span>
+                    <span class="title-text">オプション料金のポイント</span>
+                </div>
+                <div class="option-description">
+                    キャンペーン成功のコツ！<br>
+                    費用を抑えて参加ユーザーに喜ばれる賞品ニーズに応えることが重要！<br>
+                </div>
+            </div>
+            <div class="option-illustration">
+                <img src="./assets/image/gan.png" alt="スマホを持つ人物イラスト">
+            </div>
+        </div>
     </section>
 
     <footer class="footer">
@@ -237,4 +275,5 @@
 <script>
     new WOW().init();
 </script>
+
 </html>

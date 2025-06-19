@@ -7,7 +7,7 @@
 }
 
 .price{
-  padding: 60px 20px;
+  padding: 60px 20px 0 20px;
   text-align: center;
 }
 .price_container{
@@ -86,9 +86,15 @@
 }
 .price-card span{
   color: #323232;
+  font-size: 16px;
 }
 .price-card strong {
   color: #d32f2f;
+  font-size: 22px;
+}
+
+#small{
+  text-align: start;
 }
 .recommended {
   border: 1px solid var(--auxiliary-color);
@@ -125,6 +131,7 @@
 .price-card:nth-child(1) {
   display: none;
 }
+
 @media (max-width: 1200px) {
   .price-card:nth-child(1) {
     display: block;
@@ -146,7 +153,11 @@
     margin-top: 20px;
   }
 }
-
+@media (max-width: 400px) {
+  .price-card strong small{
+    font-size: 16px;
+  }
+}
 /* option */
 .option{
   padding: 60px 20px;
@@ -296,11 +307,62 @@
 /* note */
 .note{
   text-align: center;
-  padding-block: 60px;
+  padding-block: 0 60px;
 }
-.note img{
-  min-width: 325px;
-  width: 55%;
+.option-box {
+  display: flex;
+  align-items: center;
+  border: 2px solid #4a90e2;
+  border-radius: 12px;
+  padding: 10px 20px;
+  max-width: 700px;
+  margin: 60px auto 0 auto;
+  font-family: 'Hiragino Kaku Gothic ProN', 'メイリオ', sans-serif;
+  background: #fff;
+  position: relative;
+}
+
+.option-content {
+  flex: 1;
+}
+
+.option-title {
+  font-weight: bold;
+  color: #005bab;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 5px;
+  padding-left: 10px;
+}
+
+.icon {
+  font-size: 1.2em;
+  margin-right: 8px;
+}
+
+.option-description {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+  text-align: start;
+  padding-left: 10px;
+}
+
+.note {
+  font-size: 0.85em;
+  color: #666;
+}
+
+.option-illustration {
+  margin-left: 20px;
+}
+
+.option-illustration img {
+  width: 100px;
+  height: auto;
 }
 @media (max-width: 530px) {
   .note{
