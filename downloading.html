@@ -54,11 +54,6 @@
                     <img src="./assets/image/downloadICO.svg" alt="">
                 </a>
             </div>
-            <!-- <div class="button-group container margins">
-                <button class="btn download" onclick="forceDownloadPDF()">ダウンロードする
-                    <img src="./assets/image/downloadICO.svg" alt="">
-                </button>
-            </div> -->
         </div>
     </div>
 
@@ -68,25 +63,4 @@
     </footer>
 </body>
 <script src="./assets/jp/menu.js"></script>
-<!-- <script>
-  async function forceDownloadPDF() {
-    try {
-      const response = await fetch('https://guddora.com/pdf/goodla-information-ver5.pdf');
-      const blob = await response.blob();
-
-      const url = window.URL.createObjectURL(blob);
-      const a = document.createElement('a');
-      a.href = url;
-      console.log(url);
-      a.download = 'goodla-information-ver5.pdf'; // 任意の保存名
-      document.body.appendChild(a);
-      a.click();
-      a.remove();
-      window.URL.revokeObjectURL(url);
-    } catch (error) {
-      alert("PDFのダウンロードに失敗しました。");
-      console.error(error);
-    }
-  }
-</script> -->
 </html>
