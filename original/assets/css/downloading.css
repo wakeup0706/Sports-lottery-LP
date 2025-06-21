@@ -1,0 +1,31 @@
+:root {
+  --text: #2D6584;
+  --main-color: #41B8F9;
+  --auxiliary-color: #FD7927;
+  --back-color: #ECF0F4;
+  --footer-back-color: #D9F1FE;
+}
+
+.downloading-section {
+  margin: auto;
+  box-sizing: border-box;
+  max-width: 100%;
+  width: 640px;
+  display: flex;
+  height: 75vh;
+}
+.downloading-section .downloading-content {
+  margin: auto;
+}
+.downloading-section .downloading-content .logo{
+  max-width: 390px;
+}
+.downloading-section .downloading-content .logo img{
+  width: 100%;
+}
+.downloading-section .downloading-content p{
+  font-size: 30px;
+  margin-block: 30px;
+  font-weight: 600;
+  color: var(--auxiliary-color);
+}

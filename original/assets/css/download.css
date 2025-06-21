@@ -1,0 +1,171 @@
+:root {
+    --text: #2D6584;
+    --main-color: #41B8F9;
+    --auxiliary-color: #FD7927;
+    --back-color: #ECF0F4 ;
+    --footer-back-color: #D9F1FE ;
+}
+
+/* convenient */
+.contact{
+  padding: 40px 20px 30px 20px;
+  text-align: center;
+  font-family: "Hiragino Kaku Gothic ProN", sans-serif;
+}
+.contact .section-title {
+  font-size: 32px;
+  margin-block: 20px 30px;
+  position: relative;
+  color: var(--text);
+}
+.contact .section-title::before{
+  content: 'Download';
+  font-size: 14px;
+  font-weight: 300;
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.section-title::after{
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: 7%;
+  margin-inline: auto;
+  background-color: var(--text);
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/* ---------- */
+.dl-inner {
+  padding: 50px 20px 20px;
+  margin: 0 auto;
+  max-width: 960px;
+}
+.dl h2 {
+  color: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+.dl h2 span {
+  background: #E81F1F;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  color: #fff;
+  padding: 6px;
+  margin-right: 11px;
+  font-size: 18px;
+}
+.dl-plan img {
+  max-width: 500px;
+  display: block;
+  margin: 0 auto;
+}
+@media screen and (min-width: 769px) {
+  .dl-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .dl-plan, .dl-form {
+    width: 50%;
+  }
+  .dl h2 {
+    margin-bottom: 22px;
+    margin-top: 15px;
+  }
+}
+/* --------------------------------------- */
+.right-section {
+  max-width: 400px;
+  width: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: start;
+}
+
+label {
+  font-weight: bold;
+  color: #323232;
+}
+
+.required {
+  color: white;
+  background-color: #E81F1F;
+  font-size: 12px;
+  margin-right: 6px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  color: #fff;
+  padding: 2px 10px;
+}
+
+.optional {
+  color: white;
+  background-color: gray;
+  font-size: 12px;
+  margin-right: 6px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  color: #fff;
+  padding: 2px 10px;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+textarea {
+  height: 80px;
+  resize: vertical;
+}
+
+button {
+  background-color: var(--main-color);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  color: white;
+  padding: 12px;
+  border: none;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #008ecf;
+}
+@media (max-width: 1024px) {
+  .dl-inner {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .dl-plan img {
+    max-width: 500px;
+    width: 100%;
+  }
+}

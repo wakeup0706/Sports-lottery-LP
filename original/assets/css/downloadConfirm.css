@@ -1,0 +1,51 @@
+:root {
+  --text: #2D6584;
+  --main-color: #41B8F9;
+  --auxiliary-color: #FD7927;
+  --back-color: #ECF0F4;
+  --footer-back-color: #D9F1FE;
+}
+
+.center-wrap {
+  margin: auto;
+  box-sizing: border-box;
+  max-width: 100%;
+  width: 640px;
+  display: flex;
+  height: 75vh;
+}
+
+.center-wrap .center-body {
+  margin: auto;
+}
+
+.group-container h3 {
+  text-align: center;
+}
+.sf-form-inner > h1{
+  text-align: center;
+  margin: 14px;
+}
+.fcon-checkmark img {
+  width: 40px;
+}
+.group-container a{
+  margin: 10px;
+  font-size: 20px;
+}
+[class^="fcon-"],
+[class*=" fcon-"] {
+  font-family: 'fcon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  vertical-align: middle;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
