@@ -99,12 +99,12 @@ a {
   right: 20px;
   width: 120px;
   height: 120px;
-  background: linear-gradient(to bottom, #ff87ca, #ff2fa0);
+  background-color: #FFC03A;
   border-radius: 50%;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   text-align: center;
   font-family: 'Segoe UI', sans-serif;
-  z-index: 9999;
+  z-index: 10;
   cursor: pointer;
   display: flex;
   align-items: center;

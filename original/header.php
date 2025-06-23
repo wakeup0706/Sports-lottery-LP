@@ -25,6 +25,7 @@
         <div class="header-container">
             <a href="<?php echo home_url(); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/image/logo.png" alt="くじクラウド" class="logo" /></a>
             <nav class="nav">
+                <a href="<?php echo home_url(); ?>">ホーム</a>
                 <a href="<?php echo site_url();?>/priceplan">料金プラン</a>
                 <a href="<?php echo site_url();?>/system">機能一覧</a>
                 <a href="<?php echo site_url();?>/implement">導入事例</a>
@@ -37,6 +38,7 @@
                 <a href="#menu" id="toggle"><span></span></a>
                 <div id="menu">
                     <ul>
+                        <li><a href="<?php echo home_url(); ?>">ホーム</a></li>
                         <li><a href="<?php echo site_url();?>/priceplan">料金プラン</a></li>
                         <li><a href="<?php echo site_url();?>/system">機能一覧</a></li>
                         <li><a href="<?php echo site_url();?>/implement">導入事例</a></li>

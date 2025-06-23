@@ -29,3 +29,11 @@
   font-weight: 600;
   color: var(--auxiliary-color);
 }
+@media (max-width: 768px) {
+  .downloading-section .downloading-content .logo {
+    max-width: 290px;
+  }
+  .downloading-section .downloading-content p {
+    font-size: 21px;
+  }
+}

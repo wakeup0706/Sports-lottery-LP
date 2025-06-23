@@ -355,4 +355,3 @@ document.addEventListener('wpcf7submit', function(event) {
         }, 3000); // 3秒後に非表示
     }
 }, false);
-

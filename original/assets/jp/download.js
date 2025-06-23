@@ -33,7 +33,7 @@ jQuery(document).ready(function ($) {
       },
       success: function (response) {
         if(response.success){
-          location.href="./downloadconfirm";
+          location.href="https://kuji-cloud.com/lp/downloadconfirm";
         } else {
           alert(response.data);
         }

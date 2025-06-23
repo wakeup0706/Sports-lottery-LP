@@ -56,7 +56,7 @@ function cvf_sendEmail() {
     $prepared = $_POST['prepared'];
     $content = $_POST['content'];
 
-    $admin_email = 'goldenchain0804@gmail.com';
+    $admin_email = 'info@kuji-cloud.com';
     $user_email  = $company_email;
 
     $subject_admin = '【くじクラウド】 お問い合わせがありました。';
@@ -136,7 +136,7 @@ function downloadEmail() {
     $prepared = $_POST['prepared'];
     $content = $_POST['content'];
 
-    $admin_email = 'goldenchain0804@gmail.com';
+    $admin_email = 'info@kuji-cloud.com';
 
     $subject_admin = '【くじクラウド】 お問い合わせがありました。';
 

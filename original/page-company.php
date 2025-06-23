@@ -71,8 +71,8 @@
             </div>
         </div>
         <div class="button-group container margins">
-            <a href="<?php echo site_url();?>/download" class="btn download wow animate__fadeInUp" data-wow-duration="1.5s">資料ダウンロード<img src="<?php echo get_stylesheet_directory_uri(); ?>/<?php echo get_stylesheet_directory_uri(); ?>/assets/image/downloadICO.svg" alt=""></a>
-            <a href="<?php echo site_url();?>/contact" class="btn contact wow animate__fadeInUp" data-wow-duration="1.5s">お問い合わせ<img src="<?php echo get_stylesheet_directory_uri(); ?>/<?php echo get_stylesheet_directory_uri(); ?>/assets/image/contectICO.svg" alt=""></a>
+            <a href="<?php echo site_url();?>/download" class="btn download wow animate__fadeInUp" data-wow-duration="1.5s">資料ダウンロード<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/image/downloadICO.svg" alt=""></a>
+            <a href="<?php echo site_url();?>/contact" class="btn contact wow animate__fadeInUp" data-wow-duration="1.5s">お問い合わせ<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/image/contectICO.svg" alt=""></a>
         </div>
     </section>
     <?php get_footer(); ?>
