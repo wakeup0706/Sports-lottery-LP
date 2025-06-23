@@ -54,4 +54,5 @@
             </div>
         </div>
     </section>
+    <script src="<?php echo get_stylesheet_directory_uri(); ?>/assets/jp/download.js"></script>
 <?php get_footer(); ?>

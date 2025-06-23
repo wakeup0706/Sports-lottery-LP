@@ -40,7 +40,7 @@
                         <li><a href="<?php echo site_url();?>/priceplan">料金プラン</a></li>
                         <li><a href="<?php echo site_url();?>/system">機能一覧</a></li>
                         <li><a href="<?php echo site_url();?>/implement">導入事例</a></li>
-                        <li><a href="<?php echo site_url();?>/faq" style="font-weight: 500;">Q & A</a></li>
+                        <li><a href="<?php echo site_url();?>/faq" style="font-weight: 500; font-family: Arial, sans-serif;">Q & A</a></li>
                         <li><a href="<?php echo site_url();?>/download">資料ダウンロード</a></li>
                         <li><a href="<?php echo site_url();?>/contact">お問い合わせ</a></li>
                         <li><a href="<?php echo site_url();?>/company">運営会社</a></li>

@@ -63,27 +63,27 @@ function cvf_sendEmail() {
     $subject_user  = '【くじクラウド】 お問い合わせありがとうございます。';
 
     $body_admin = '<!DOCTYPE html><html><meta charset="UTF-8"><body>';
-    $body_admin .= '◆ ご担当者名: ' . $user_name . '<br>';
-    $body_admin .= '◆ 法人名: ' . $company_name . '<br>';
-    $body_admin .= '◆ 企業URL: ' . $company_url . '<br>';
-    $body_admin .= '◆ メールアドレス: ' . $company_email . '<br>';
-    $body_admin .= '◆ 電話番号: ' . $phonnumber . '<br>';
-    $body_admin .= '◆ 都道府県: ' . $prefecture . '<br>';
-    $body_admin .= '◆ 検討状況: ' . $prepared . '<br>';
-    $body_admin .= '◆ その他ご質問など: <br>' . $content . '<br>';
+    $body_admin .= '- ご担当者名: ' . $user_name . '<br>';
+    $body_admin .= '- 法人名: ' . $company_name . '<br>';
+    $body_admin .= '- 企業URL: ' . $company_url . '<br>';
+    $body_admin .= '- メールアドレス: ' . $company_email . '<br>';
+    $body_admin .= '- 電話番号: ' . $phonnumber . '<br>';
+    $body_admin .= '- 都道府県: ' . $prefecture . '<br>';
+    $body_admin .= '- 検討状況: ' . $prepared . '<br>';
+    $body_admin .= '- その他ご質問など: <br>' . $content . '<br>';
     $body_admin .= '</body></html>';
 
     $body_user = '<!DOCTYPE html><html><meta charset="UTF-8"><body>';
     $body_user .= $user_name . '様<br>';
     $body_user .= 'この度はくじクラウドへお問い合わせいただき誠にありがとうございます。<br>担当者より3営業日以内にご連絡差し上げますのでお待ちください。<br><br>以下ご入力いただいた内容となりますのでご確認ください。<br>';
-    $body_user .= '◆ ご担当者名: ' . $user_name . '<br>';
-    $body_user .= '◆ 法人名: ' . $company_name . '<br>';
-    $body_user .= '◆ 企業URL: ' . $company_url . '<br>';
-    $body_user .= '◆ メールアドレス: ' . $company_email . '<br>';
-    $body_user .= '◆ 電話番号: ' . $phonnumber . '<br>';
-    $body_user .= '◆ 都道府県: ' . $prefecture . '<br>';
-    $body_user .= '◆ 検討状況: ' . $prepared . '<br>';
-    $body_user .= '◆ その他ご質問など: <br>' . $content . '<br><br>';
+    $body_user .= '- ご担当者名: ' . $user_name . '<br>';
+    $body_user .= '- 法人名: ' . $company_name . '<br>';
+    $body_user .= '- 企業URL: ' . $company_url . '<br>';
+    $body_user .= '- メールアドレス: ' . $company_email . '<br>';
+    $body_user .= '- 電話番号: ' . $phonnumber . '<br>';
+    $body_user .= '- 都道府県: ' . $prefecture . '<br>';
+    $body_user .= '- 検討状況: ' . $prepared . '<br>';
+    $body_user .= '- その他ご質問など: <br>' . $content . '<br><br>';
     $body_user .= '━━━━━━━━━━━━━━━━━━━━━━━<br>';
     $body_user .= 'くじクラウド<br>';
     $body_user .= '合同会社Vermuda（Vermuda LLC.）<br>';
@@ -141,23 +141,23 @@ function downloadEmail() {
     $subject_admin = '【くじクラウド】 お問い合わせがありました。';
 
     $body_admin = '<!DOCTYPE html><html><meta charset="UTF-8"><body>';
-    $body_admin .= '◆ ご担当者名: ' . $user_name . '<br>';
-    $body_admin .= '◆ 法人名: ' . $company_name . '<br>';
-    $body_admin .= '◆ 企業URL: ' . $company_url . '<br>';
-    $body_admin .= '◆ メールアドレス: ' . $company_email . '<br>';
-    $body_admin .= '◆ 電話番号: ' . $phonnumber . '<br>';
-    $body_admin .= '◆ 都道府県: ' . $prefecture . '<br>';
-    $body_admin .= '◆ 検討状況: ' . $prepared . '<br>';
-    $body_admin .= '◆ その他ご質問など: <br>' . $content . '<br>';
+    $body_admin .= '- ご担当者名: ' . $user_name . '<br>';
+    $body_admin .= '- 法人名: ' . $company_name . '<br>';
+    $body_admin .= '- 企業URL: ' . $company_url . '<br>';
+    $body_admin .= '- メールアドレス: ' . $company_email . '<br>';
+    $body_admin .= '- 電話番号: ' . $phonnumber . '<br>';
+    $body_admin .= '- 都道府県: ' . $prefecture . '<br>';
+    $body_admin .= '- 検討状況: ' . $prepared . '<br>';
+    $body_admin .= '- その他ご質問など: <br>' . $content . '<br>';
     $body_admin .= '</body></html>';
 
     $headers_admin = array(
         'Content-Type: text/html; charset=UTF-8',
-        'From: くじクラウド <'. $user_email .'>',
+        'From: くじクラウド <'. $company_email .'>',
     );
 
     if (wp_mail($admin_email, $subject_admin, $body_admin, $headers_admin)) {
-        wp_send_json_success("メールを送信しました。");
+        wp_send_json_success(1);
     } else {
         wp_send_json_error("メールの送信に失敗しました。");
     }

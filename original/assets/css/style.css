@@ -123,24 +123,23 @@ a {
   flex-direction: column;
   align-items: center;
   line-height: 1.2;
-  margin-top: 38px;
+  margin-top: 24px;
 }
 
 .trial-text strong {
-  font-size: 18px;
-  font-weight: bold;
+  font-size: 22px;
+  font-weight: 900;
   margin-bottom: 8px;
 }
 
 .trial-text p {
-  font-size: 13px;
+  font-size: 10px;
   font-weight: 600;
   color: #333;
   margin: 0;
 }
 
 .arrow-down {
-  margin-top: 6px;
   font-size: 18px;
   color: white;
 }
@@ -156,11 +155,12 @@ a {
   }
 
   .trial-text p {
-    font-size: 11px;
+    font-size: 9px;
   }
 
   .arrow-down {
     font-size: 14px;
+    margin-top: -4px;
   }
 
   .trial-text {

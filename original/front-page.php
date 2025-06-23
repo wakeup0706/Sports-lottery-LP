@@ -3,8 +3,8 @@
     <div class="trial-badge">
         <a href="<?php echo site_url();?>/contact">
             <div class="trial-text">
-                <strong>お試しも</strong>
-                <p>可能</p>
+                <strong>お試しも<br>できます</strong>
+                <p>お問い合わせへ</p>
                 <div class="arrow-down"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/image/chevron-double-down 1.svg" alt=""></div>
             </div>
         </a>
