@@ -1,5 +1,9 @@
 jQuery(document).ready(function ($) {
-  $("form").on("submit", function (e) {
+
+  const sendButton = $("input[type='submit']");
+  const sendEmailButton = document.querySelector('#sendEmailButton');
+
+  $("form").off("submit").on("submit", function (e) {
     e.preventDefault();
 
     if (!this.checkValidity()) {
@@ -7,20 +11,23 @@ jQuery(document).ready(function ($) {
       return;
     }
 
-    const user_name = $("#d_charge_name").val();
-    const company_name = $("#d_corporation_name").val();
-    const company_url = $("#d_company_url").val();
-    const company_email = $("#d_email_address").val();
-    const phonnumber = $("#d_telephon_number").val();
-    const prefecture = $("#d_prefecture").val();
-    const prepared = $("#d_consideration").val();
-    const content = $("#d_other_question").val();
+    const user_name = $("#user_name").val();
+    const company_name = $("#company_name").val();
+    const company_url = $("#company_url").val();
+    const company_email = $("#company_email").val();
+    const phonnumber = $("#phonnumber").val();
+    const prefecture = $("#prefecture").val();
+    const prepared = $("#prepared").val();
+    const content = $("#content").val();
+
+    sendButton.prop("disabled", true);
+    sendEmailButton.style.display = 'inline-block';
 
     $.ajax({
       url: my_ajax_obj.ajax_url,
       type: "POST",
       data: {
-        action: "download_email",
+        action: "send_email",
         nonce: my_ajax_obj.nonce,
         user_name: user_name,
         company_name: company_name,
@@ -33,11 +40,21 @@ jQuery(document).ready(function ($) {
       },
       success: function (response) {
         if(response.success){
-          location.href="https://kuji-cloud.com/lp/downloadconfirm";
-        } else {
-          alert(response.data);
+          location.href="https://kuji-cloud.com/lp/downloadconfirm/";
+        }else{
+          alert("送信に失敗しました。");
+          sendButton.prop("disabled", false);
+          sendEmailButton.style.display = 'none';
         }
+      },
+      error: function (xhr, status, error) {
+        alert("送信に失敗しました。");
+        sendButton.prop("disabled", false);
+        sendEmailButton.style.display = 'none';
       },
     });
   });
 });
+
+
+

@@ -13,6 +13,7 @@
   width: 640px;
   display: flex;
   height: 75vh;
+  padding: 20px;
 }
 
 .center-wrap .center-body {

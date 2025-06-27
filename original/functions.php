@@ -137,8 +137,10 @@ function downloadEmail() {
     $content = $_POST['content'];
 
     $admin_email = 'info@kuji-cloud.com';
+    $user_email  = $company_email;
 
-    $subject_admin = '【くじクラウド】 お問い合わせがありました。';
+    $subject_admin = '【くじクラウド】 資料がダウンロードされました。';
+    $subject_user  = '【くじクラウド】 資料ダウンロードありがとうございます。';
 
     $body_admin = '<!DOCTYPE html><html><meta charset="UTF-8"><body>';
     $body_admin .= '- ご担当者名: ' . $user_name . '<br>';
@@ -150,14 +152,44 @@ function downloadEmail() {
     $body_admin .= '- 検討状況: ' . $prepared . '<br>';
     $body_admin .= '- その他ご質問など: <br>' . $content . '<br>';
     $body_admin .= '</body></html>';
-
+    
+    $body_user = '<!DOCTYPE html><html><meta charset="UTF-8"><body>';
+    $body_user .= $user_name . '様<br>';
+    $body_user .= 'この度はくじクラウドの資料をダウンロードいただき誠にありがとうございます。<br>ご不明点や導入に関するご相談がございましたら、どうぞお気軽にご連絡ください。<br>検討段階でもご質問や活用事例のご紹介など、サポートさせていただきます。<br><br>';
+    $body_user .= '以下ご入力いただいた内容となりますのでご確認ください。<br>';
+    $body_user .= '- ご担当者名: ' . $user_name . '<br>';
+    $body_user .= '- 法人名: ' . $company_name . '<br>';
+    $body_user .= '- 企業URL: ' . $company_url . '<br>';
+    $body_user .= '- メールアドレス: ' . $company_email . '<br>';
+    $body_user .= '- 都道府県: ' . $prefecture . '<br>';
+    $body_user .= '- 電話番号: ' . $phonnumber . '<br>';
+    $body_user .= '- 検討状況: ' . $prepared . '<br>';
+    $body_user .= '- その他ご質問など: <br>' . $content . '<br>';
+    $body_user .= '━━━━━━━━━━━━━━━━━━━━━━━<br>';
+    $body_user .= 'くじクラウド<br>';
+    $body_user .= '合同会社Vermuda（Vermuda LLC.）<br>';
+    $body_user .= '担当：長井 星司<br>';
+    $body_user .= 'mail：s.nagai@vermuda.jp<br><br>';
+    $body_user .= '〒145-0071 東京都大田区田園調布1丁目15-6 UNE MAISON 102号室<br>';
+    $body_user .= 'https://vermuda.jp<br>';
+    $body_user .= '━━━━━━━━━━━━━━━━━━━━━━━<br>';
+    $body_user .= '</body></html>';
+    
     $headers_admin = array(
         'Content-Type: text/html; charset=UTF-8',
-        'From: くじクラウド <'. $company_email .'>',
+        'From: くじクラウド <'. $user_email .'>',
+    );
+    
+    $headers_user = array(
+        'Content-Type: text/html; charset=UTF-8',
+        'From: くじクラウド <info@kuji-cloud.com>',
     );
 
-    if (wp_mail($admin_email, $subject_admin, $body_admin, $headers_admin)) {
-        wp_send_json_success(1);
+    $sent_to_admin = wp_mail($admin_email, $subject_admin, $body_admin, $headers_admin);
+    $sent_to_user = wp_mail($user_email, $subject_user, $body_user, $headers_user);
+
+    if ($sent_to_admin && $sent_to_user) {
+        wp_send_json_success("メールを送信しました。");
     } else {
         wp_send_json_error("メールの送信に失敗しました。");
     }

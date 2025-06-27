@@ -21,13 +21,13 @@
 
                         <dt><span>必須</span>企業URL</dt>
                         <dd>
-                            <input type="url" name="your-url" id="company_url" placeholder="例）http://localhost" required>
+                            <input type="url" name="your-url" id="company_url" placeholder="例）http://kuj-cloud.com" required>
                             <p>※企業WEBサイトの無い場合、その他、社内取引審査の結果によっては<br class="sp-none">お取引をお断りする場合があります。</p>
                         </dd>
 
                         <dt><span>必須</span>メールアドレス</dt>
                         <dd>
-                            <input type="email" name="your-email" id="company_email" class="middle" placeholder="例）taro-yamada@localhost"
+                            <input type="email" name="your-email" id="company_email" class="middle" placeholder="例）taro-yamada@kuj-cloud.com"
                                 required>
                         </dd>
 
@@ -123,7 +123,7 @@
                             </p>
                         </dd>
                     </dl>
-                    <input type="submit" value="この内容で送信する">
+                    <button type="submit"><span class="loader" id="sendEmailButton" style="display: none;"></span>この内容で送信する</button>
                 </div>
             </form>
         </div>

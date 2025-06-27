@@ -1,5 +1,9 @@
 jQuery(document).ready(function ($) {
-  $("form").on("submit", function (e) {
+
+  const sendButton = $("input[type='submit']");
+  const sendEmailButton = document.querySelector('#sendEmailButton');
+
+  $("form").off("submit").on("submit", function (e) {
     e.preventDefault();
 
     if (!this.checkValidity()) {
@@ -15,6 +19,9 @@ jQuery(document).ready(function ($) {
     const prefecture = $("#prefecture").val();
     const prepared = $("#prepared").val();
     const content = $("#content").val();
+
+    sendButton.prop("disabled", true);
+    sendEmailButton.style.display = 'inline-block';
 
     $.ajax({
       url: my_ajax_obj.ajax_url,
@@ -32,13 +39,22 @@ jQuery(document).ready(function ($) {
         content: content,
       },
       success: function (response) {
-        console.log("AJAX Success: ", response);
-        alert("送信完了しました。");
+        if(response.success){
+          location.href="https://kuji-cloud.com/lp/contactconfirm/";
+        }else{
+          alert("送信に失敗しました。");
+          sendButton.prop("disabled", false);
+          sendEmailButton.style.display = 'none';
+        }
       },
       error: function (xhr, status, error) {
-        console.error("AJAX Error: ", error);
         alert("送信に失敗しました。");
+        sendButton.prop("disabled", false);
+        sendEmailButton.style.display = 'none';
       },
     });
   });
 });
+
+
+

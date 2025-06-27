@@ -76,7 +76,9 @@
   margin-bottom: 0 !important;
 }
 
-.contact dl dd input[type=text], .contact dl dd input[type=email], .contact dl dd input[type=url],
+.contact dl dd input[type=text],
+.contact dl dd input[type=email],
+.contact dl dd input[type=url],
 .contact dl dd textarea {
   width: 100% !important;
   font-size: 20px !important;
@@ -163,8 +165,11 @@
 }
 
 .contact .confirm_button,
-.contact input[type=submit] {
-  display: block;
+.contact button[type=submit] {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   padding: 0;
   height: 74px;
@@ -263,14 +268,22 @@
     font-size: 18px;
     border-radius: 9px;
   }
+
   .contact dl dt {
     margin-bottom: 7px !important;
   }
+
   .contact dl dt span {
     font-size: 12px !important;
     width: 46px !important;
     line-height: 22px;
     border-radius: 11px !important;
     margin-right: 6px !important;
+  }
+
+  .contact .confirm_button,
+  .contact button[type=submit] {
+    width: 290px;
+    height: 66px;
   }
 }

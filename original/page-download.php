@@ -18,7 +18,7 @@
                             <input type="text" id="d_corporation_name" placeholder="例）株式会社くじクラウド" required>
 
                             <label><span class="required">必須</span>企業URL</label>
-                            <input type="url" id="d_company_url" placeholder="例）http://kuji-cloud.mon/lp" required>
+                            <input type="url" id="d_company_url" placeholder="例）http://kuji-cloud.mon" required>
 
                             <label><span class="required">必須</span>メールアドレス</label>
                             <input type="email" id="d_email_address" placeholder="例）taro-yamada@kuji-cloud.com" required>
@@ -90,7 +90,7 @@
                             <label>その他ご質問など</label>
                             <textarea id="d_other_question" placeholder="例）カスタマイズについて、予算について"></textarea>
 
-                            <button type="submit">送信</button>
+                            <button type="submit"><span class="loader" id="sendEmailButton" style="display: none;"></span>送信</button>
                         </form>
                     </div>
                 </div>
